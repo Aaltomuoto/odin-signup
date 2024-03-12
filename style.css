@@ -117,18 +117,19 @@ h2 {
     margin-bottom: .25rem;
     letter-spacing: .1rem;
 }
-.form-row input[type="text"], .form-row input[type="tel"], .form-row input[type="email"], .form-row input[type="password"] {
-    border: 1px var(--textfield-border-color) solid;
-    font-size: 1rem;
-    padding: .25em;
-    border-radius: .25rem;
-}
 .form-row input[type="text"]:invalid, .form-row input[type="tel"]:invalid, .form-row input[type="email"]:invalid, .form-row input[type="password"]:invalid {
     border: 1px var(--textfield-error-border-color) solid;
 }
 .form-row input[type="text"]:focus, .form-row input[type="tel"]:focus, .form-row input[type="email"]:focus, .form-row input[type="password"]:focus {
     border: 1px var(--textfield-focus-border-color) solid;
-    box-shadow: inset 10px 10px 15px -3px rgba(0,0,0,0.1);
+    outline: none;
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,0.1);
+}
+.form-row input[type="text"], .form-row input[type="tel"], .form-row input[type="email"], .form-row input[type="password"] {
+    border: 1px var(--textfield-border-color) solid;
+    font-size: 1rem;
+    padding: .25em;
+    border-radius: .25rem;
 }
 button {
     background-color: var(--btn-bg-color);
