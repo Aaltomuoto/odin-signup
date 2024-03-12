@@ -141,3 +141,7 @@ button {
     margin-bottom: 1rem;
     font-weight: 700;
 }
+.error {
+    color: red;
+    font-size: .75rem;
+}

@@ -40,11 +40,11 @@
                     </div>
                     <div class="form-row">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" name="password" id="password" minlength="8" required><span class="error" aria-live="polite"></span>
                     </div>
                     <div class="form-row">
                         <label for="confirm">Confirm password</label>
-                        <input type="password" name="confirm" id="confirm" required>
+                        <input type="password" name="confirm" id="confirm" minlength="8" required><span class="error" aria-live="polite"></span>
                     </div>
                 </fieldset>
             </div>
@@ -52,5 +52,6 @@
             <p>Already have an account? <a href="">Log in</a></p>
         </form>
     </section>
+    <script src="javascript.js"></script>
 </body>
 </html>
