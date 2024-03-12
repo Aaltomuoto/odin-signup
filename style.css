@@ -6,6 +6,10 @@
     font-style: normal;
 
 }
+:root {
+    --text-color:#FFF;
+    --body-bg-color:#F9FAFB;
+}
 html {
     height: 100%;
 }
@@ -15,23 +19,48 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body section.left {
     flex-basis: 40%;
     height: inherit;
-    background:#FFF url('img/bg.jpg') no-repeat;
+    background:var(--text-color) url('img/bg.jpg') no-repeat;
     background-size: cover;
-    color:#FFF;
+    color:var(--text-color);
+    display: flex;
+    flex-direction: column;
 }
 body section.right {
-    background-color: #F9FAFB;
+    background-color: var(--body-bg-color);
     flex-basis: 60%;
     height: inherit;
 }
 .left div {
-    background-color: rgba(0,0,0,.5);
-    padding: 1em 0;
+    flex-grow: 1;
 }
 h1 {
+    background-color: rgba(0,0,0,.5);
+    padding: 1rem 0;
+    margin: 14rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'norsebold', sans-serif;
+    font-size: 5em;
+}
+h1:before {
+    content: '';
+    height: 8.125rem;
+    width: 6.25rem;
+    display: inline-block;
+    background-color: pink;
+    background: transparent url('img/odin-lined.png') center center no-repeat;
+    background-size: cover;
+}
+.left p {
     text-align: center;
+    font-size: .75rem;
+}
+.left p a {
+    color: var(--text-color);
 }
