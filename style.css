@@ -6,3 +6,32 @@
     font-style: normal;
 
 }
+html {
+    height: 100%;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+body section.left {
+    flex-basis: 40%;
+    height: inherit;
+    background:#FFF url('img/bg.jpg') no-repeat;
+    background-size: cover;
+    color:#FFF;
+}
+body section.right {
+    background-color: #F9FAFB;
+    flex-basis: 60%;
+    height: inherit;
+}
+.left div {
+    background-color: rgba(0,0,0,.5);
+    padding: 1em 0;
+}
+h1 {
+    text-align: center;
+}
